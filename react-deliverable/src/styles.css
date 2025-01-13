@@ -1,0 +1,192 @@
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align at the top */
+  height: 100%; /* Full height of the viewport */
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content at the top of the screen */
+  padding: 20px; /* Add padding to ensure spacing from edges */
+  box-sizing: border-box;
+}
+
+/* Styling for the support card */
+.support-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header styles */
+.header {
+  background-color: #ffe5e5;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 80px; /* Set the desired width */
+  height: 80px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image scales correctly */
+}
+
+/* Contact info section */
+.contact-info {
+  margin: 5px 0;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact-method i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Hours section */
+.hours {
+  background-color: #ffe5e5;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.schedule-entry {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .support-card {
+    padding: 15px;
+  }
+
+  .contact-method {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-method i {
+    margin-bottom: 5px;
+  }
+}
+
+.create-schedule-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-schedule-form label {
+  font-weight: bold;
+}
+
+.create-schedule-form input,
+.create-schedule-form select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.create-schedule-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-schedule-form button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+
+.get-schedule-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.get-schedule-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.get-schedule-form input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.get-schedule-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.get-schedule-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.schedule-details {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
